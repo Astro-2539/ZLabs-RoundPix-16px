@@ -1,4 +1,4 @@
-![标题](/img/title.PNG "Title")
+![标题](/img/Title.PNG "Title")
 
 # Z Labs Round Bitmap 16px
 
