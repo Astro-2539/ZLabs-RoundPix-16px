@@ -1,30 +1,31 @@
-![标题](/img/Title.PNG "Title")
-
 # Z Labs Round Bitmap 16px
 
-「Z Labs Round Bitmap 16px」是一款规格为 16px 的像素字体（汉字实际占用大小为 15*15），采用圆体字形风格，西文字符按等宽规格绘制。
+![Title](/img/幻灯片1.PNG "Title")
 
-本项目处于早期开发阶段，目前支持 GB/T 2312 一级汉字、常用西文及常用标点符号。
+「Z Labs Round Bitmap 16px」（Z工坊像素圆体 16px）是一款规格为 16px 的像素字体（汉字实际占用大小为 15*15），采用圆体字形风格，西文字符按等宽规格绘制。
+
+本项目处于早期开发阶段，目前支持 GB/T 2312 一级汉字、常用西文及常用标点符号，可满足较为简单的简体中文汉字使用需求。
 
 > [!WARNING]
 > 
-> 此字体仍处于早期开发阶段，除字符支持较少外，还可能会出现汉字重心及字面大小不一致的情况。
-> 
-> 当前版本不代表最终版品质。
+> 此字体仍处于早期开发阶段，当前版本不代表最终版品质。
 > 
 > 如在使用过程中有任何问题，请及时在 Issues 中反馈。
 
 > [!IMPORTANT]
 > 
-> 这是一个开源项目，字体部分采用 [OFL-1.1](https://openfontlicense.org/open-font-license-official-text/) 许可证授权，构建程序部分采用 MIT 许可证授权。您可以免费商用此字体。
+> 这是一个开源项目，字体部分采用 [OFL-1.1](https://openfontlicense.org/open-font-license-official-text/) 许可证授权，构建程序部分采用 MIT 许可证授权。您可以免费商用此字体，详见「字体授权」部分。
 > 
 
-## 字体示例
+## 字体介绍
 
-![示例1](/img/Sample_1.png "Sample 1")
+![介绍页](/img/幻灯片2.PNG "介绍页")
 
-![示例2](/img/Sample_2.png "Sample 2")
+![示例页](/img/幻灯片3.PNG "示例页")
 
+![授权页](/img/幻灯片4.PNG "授权页")
+
+[点击查看字体故事](/docs/FontStory_1.md)
 
 ## 字体覆盖范围
 
@@ -32,21 +33,17 @@
 
 #### 中国大陆变体字形（CN）
 
-&nbsp;&nbsp;&nbsp;&nbsp;🚧 GB/T 2312 （3962 / 6763）
+&nbsp;&nbsp;&nbsp;&nbsp;🚧 GB/T 2312 （4094 / 6763）
 
-&nbsp;&nbsp;&nbsp;&nbsp;🚧 《通用规范汉字表》（3918 / 8105）
+&nbsp;&nbsp;&nbsp;&nbsp;🚧 《通用规范汉字表》（4048 / 8105）
 
-&nbsp;&nbsp;&nbsp;&nbsp;🚧 Big5 常用汉字表（2593 / 5401）
+&nbsp;&nbsp;&nbsp;&nbsp;🚧 Big5 常用汉字表（2663 / 5401）
 
-&nbsp;&nbsp;&nbsp;&nbsp;🚧《常用国字标准字体表》（2535 / 4808）
+&nbsp;&nbsp;&nbsp;&nbsp;🚧《常用国字标准字体表》（2600 / 4808）
 
-&nbsp;&nbsp;&nbsp;&nbsp;🚧 GB/T 12345（2835 / 6866）
+&nbsp;&nbsp;&nbsp;&nbsp;🚧 GB/T 12345（2936 / 6866）
 
-&nbsp;&nbsp;&nbsp;&nbsp;ℹ️ 共计支持汉字：4058
-
-### 其他字符
-
-本字体在 Unicode 私用区定义了部分字符，详情将于稍后上传。
+&nbsp;&nbsp;&nbsp;&nbsp;ℹ️ 共计支持汉字：4193
 
 
 ## 从工程文件构建字体
@@ -54,9 +51,6 @@
 本字体使用 [Bits'n'Picas](https://github.com/kreativekorp/bitsnpicas) 制作。运行 `./tools/build.py` 即可生成字体。
 
 构建流程依赖 `fonttools` 库、`pixel_font_builder` 库和 `kbitfont` 库。
-
-构建流程详见 `Tools` 文件夹下的自述文件。
-    
 
 ## 字体授权
 
