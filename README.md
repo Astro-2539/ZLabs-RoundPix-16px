@@ -4,6 +4,12 @@
 
 ![Title](/img/幻灯片1.PNG "Title")
 
+> [!WARNING]
+> 
+> 我们正在计划将该字体的英文名称修改为"Z Labs RoundPix 16px M CN"（详见[Issues #1](https://github.com/Astro-2539/ZLabs-Round-Bitmap-16px/issues/1)），预计于2026年1月中旬实施。
+> 
+> 如有疑问或建议，请在 Issue 中回复。
+
 **「Z Labs Round Bitmap 16px」（Z工坊像素圆体 16px）** 是一款规格为 16px 的中文像素字体（汉字实际占用大小为 15*15），采用圆体字形风格，西文字符按等宽比例绘制。
 
 本项目处于早期开发阶段，目前支持 GB/T 2312 一级汉字、常用西文及常用标点符号，可满足较为简单的简体中文汉字使用需求。
