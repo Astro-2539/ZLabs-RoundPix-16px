@@ -1,16 +1,18 @@
 **简体中文** | [English](/README_EN.md)
 
-# Z Labs Round Bitmap 16px
+# Z Labs RoundPix 16px
 
 ![Title](/img/幻灯片1.PNG "Title")
 
 > [!WARNING]
 > 
-> 我们正在计划将该字体的英文名称修改为"Z Labs RoundPix 16px M CN"（详见[Issues #1](https://github.com/Astro-2539/ZLabs-Round-Bitmap-16px/issues/1)），预计于2026年1月中旬实施。
+> 本字体家族的英文名称已由"Z Labs Round Bitmap 16px"变更为"Z Labs RoundPix 16px"（详见[Issues #1](https://github.com/Astro-2539/ZLabs-Round-Bitmap-16px/issues/1)），中文名称不变。
 > 
-> 如有疑问或建议，请在 Issue 中回复。
+> 同时，**字体文件中的字体名称**也已经同步变更。由于名称不同，新旧版本字体可以共存，**您需要在您的项目中手动切换至更名后的新版字体**。
+> 
+> 如有疑问或建议，请在 Issue #1 中回复。
 
-**「Z Labs Round Bitmap 16px」（Z工坊像素圆体 16px）** 是一款规格为 16px 的中文像素字体（汉字实际占用大小为 15*15），采用圆体字形风格，西文字符按等宽比例绘制。
+**「Z Labs RoundPix 16px」（Z工坊像素圆体 16px）** 是一款规格为 16px 的中文像素字体（汉字实际占用大小为 15*15），采用圆体字形风格，西文字符按等宽比例绘制。
 
 本项目处于早期开发阶段，目前支持 GB/T 2312 一级汉字、常用西文及常用标点符号，可满足较为简单的简体中文汉字使用需求。
 
@@ -31,7 +33,9 @@
 
 ![示例页](/img/幻灯片3.PNG "示例页")
 
-![授权页](/img/幻灯片4.PNG "授权页")
+![像素点样式](/img/幻灯片4.PNG "像素点样式")
+
+![授权页](/img/幻灯片5.PNG "授权页")
 
 [点击查看字体故事](/docs/FontStory_1.md)
 
@@ -41,17 +45,17 @@
 
 #### 中国大陆变体字形（CN）
 
-&nbsp;&nbsp;&nbsp;&nbsp;🚧 GB/T 2312 （4094 / 6763）
+&nbsp;&nbsp;&nbsp;&nbsp;🚧 GB/T 2312 （4096 / 6763）
 
-&nbsp;&nbsp;&nbsp;&nbsp;🚧 《通用规范汉字表》（4048 / 8105）
+&nbsp;&nbsp;&nbsp;&nbsp;🚧 《通用规范汉字表》（4050 / 8105）
 
 &nbsp;&nbsp;&nbsp;&nbsp;🚧 Big5 常用汉字表（2663 / 5401）
 
 &nbsp;&nbsp;&nbsp;&nbsp;🚧《常用国字标准字体表》（2600 / 4808）
 
-&nbsp;&nbsp;&nbsp;&nbsp;🚧 GB/T 12345（2936 / 6866）
+&nbsp;&nbsp;&nbsp;&nbsp;🚧 GB/T 12345（2938 / 6866）
 
-&nbsp;&nbsp;&nbsp;&nbsp;ℹ️ 共计支持汉字：4193
+&nbsp;&nbsp;&nbsp;&nbsp;ℹ️ 共计支持汉字：4195
 
 
 ## 从工程文件构建字体

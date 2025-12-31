@@ -5,11 +5,19 @@
 > This article is translated by artificial intelligence.
 > 
 
-# Z Labs Round Bitmap 16px
+# Z Labs RoundPix 16px
 
 ![Title](/img/EN/幻灯片1.PNG "Title")
 
-**Z Labs Round Bitmap 16px** is a 16px Chinese pixel font (with actual Chinese character size being 15*15), adopting a round-shaped style, with Western characters drawn in a monospaced proportion.
+> [!WARNING]
+> 
+> The English name of this font family has been changed from **"Z Labs Round Bitmap 16px"** to **"Z Labs RoundPix 16px"** (see [Issues #1](https://github.com/Astro-2539/ZLabs-Round-Bitmap-16px/issues/1) for details), while the Chinese name remains unchanged.
+> 
+> Meanwhile, the font names in the font files have also been synchronously changed. Due to the different names, the old and new versions of the fonts can coexist. **You need to manually switch to the renamed new version of the font in your project.**
+> 
+> If you have any questions or suggestions, please reply in Issue #1.
+
+**Z Labs RoundPix 16px** is a 16px Chinese pixel font (with actual Chinese character size being 15*15), adopting a round-shaped style, with Western characters drawn in a monospaced proportion.
 
 This project is in the early development stage. Currently, it supports Level 1 Chinese characters of GB/T 2312, common Western characters, and common punctuation marks, which can meet relatively simple Simplified Chinese character usage needs.
 
@@ -40,17 +48,17 @@ This project is in the early development stage. Currently, it supports Level 1 C
 
 #### Mainland China Variant Glyphs (CN)
 
-&nbsp;&nbsp;&nbsp;&nbsp;🚧 GB/T 2312 (4094 / 6763)
+&nbsp;&nbsp;&nbsp;&nbsp;🚧 GB/T 2312 (4096 / 6763)
 
-&nbsp;&nbsp;&nbsp;&nbsp;🚧 "General Standard Chinese Characters Table"（通用规范汉字表） (4048 / 8105)
+&nbsp;&nbsp;&nbsp;&nbsp;🚧 "General Standard Chinese Characters Table"（通用规范汉字表） (4050 / 8105)
 
 &nbsp;&nbsp;&nbsp;&nbsp;🚧 Big5 Common Chinese Characters Table (2663 / 5401)
 
 &nbsp;&nbsp;&nbsp;&nbsp;🚧 "Common National Standard Font Table" (2600 / 4808)
 
-&nbsp;&nbsp;&nbsp;&nbsp;🚧 GB/T 12345 (2936 / 6866)
+&nbsp;&nbsp;&nbsp;&nbsp;🚧 GB/T 12345 (2938 / 6866)
 
-&nbsp;&nbsp;&nbsp;&nbsp;ℹ️ Total supported Chinese characters: 4193
+&nbsp;&nbsp;&nbsp;&nbsp;ℹ️ Total supported Chinese characters: 4195
 
 
 ## Building Fonts from Project Files
