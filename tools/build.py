@@ -131,12 +131,14 @@ def main():
             ttf_font = builder.to_ttf_builder().font
             fix_mono_mode(ttf_font)
 
+            print(f'Creating ZLabsRoundPix_16px_{outputCode}_{language_flavor.upper()}.ttf, please wait…')
             ttf_font.save(path_define.outputs_dir.joinpath(f'ZLabsRoundPix_16px_{outputCode}_{language_flavor.upper()}.ttf'))
-            print(f'Create {style} {language_flavor} ttf')
+            print(f'Successfully created ZLabsRoundPix_16px_{outputCode}_{language_flavor.upper()}.ttf')
 
             ttf_font.flavor = 'woff2'
+            print(f'Creating ZLabsRoundPix_16px_{outputCode}_{language_flavor.upper()}.ttf.woff2, please wait…')
             ttf_font.save(path_define.outputs_dir.joinpath(f'ZLabsRoundPix_16px_{outputCode}_{language_flavor.upper()}.ttf.woff2'))
-            print(f'Create {style} {language_flavor} ttf.woff2')
+            print(f'Successfully created ZLabsRoundPix_16px_{outputCode}_{language_flavor.upper()}.ttf.woff2')
 
     # for font_format in options.font_formats:
     #     with zipfile.ZipFile(path_define.releases_dir.joinpath(f'ZLabsRoundPix_16px_{font_format}.zip'), 'w') as file:

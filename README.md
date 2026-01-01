@@ -94,3 +94,7 @@
 ## 相关资料
 
 [字统网](https://zi.tools/) - 漢字源、形、音、義、碼网羅站點
+
+## 项目 Stars 统计图
+
+[![Stargazers over time](https://starchart.cc/Astro-2539/ZLabs-RoundPix-16px.svg?variant=adaptive)](https://starchart.cc/Astro-2539/ZLabs-RoundPix-16px)
