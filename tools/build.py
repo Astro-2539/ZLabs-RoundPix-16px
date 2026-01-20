@@ -1,14 +1,15 @@
 import math
 import shutil
 import zipfile
+from datetime import date
 
 from fontTools.ttLib import TTFont
 from kbitfont import KbitFont
 from pixel_font_builder import FontBuilder, WeightName, SerifStyle, SlantStyle, WidthStyle, Glyph, opentype
 
 import path_define, options
-# from kbitx_marge_selected import advanced_merge_kbitx_files
-# from kbitx_marge_fallback import merge_kbitx_files
+from kbitx_marge_selected import advanced_merge_kbitx_files
+from kbitx_marge_fallback import merge_kbitx_files
 
 def fix_mono_mode(font: TTFont):
     font['post'].isFixedPitch = 1
@@ -21,29 +22,44 @@ def fix_mono_mode(font: TTFont):
 
 
 def main():
+    # 获取当前日期
+    date_now = date.today()
+    date_now_f = date_now.strftime("%Y%m%d")
+
+    # 初始化导出文件夹
     if path_define.build_dir.exists():
         shutil.rmtree(path_define.build_dir)
     path_define.outputs_dir.mkdir(parents=True)
     path_define.releases_dir.mkdir(parents=True)
 
+    # 将src文件夹中的CN字形文件复制到data文件夹中
     shutil.copy(path_define.src_dir.joinpath('ZLabsRoundPix_16px_CN.kbitx'), path_define.data_dir)
-    '''
-    for region in ['HC', 'JP']:
+
+    # 合并字形，生成对应标准字形的完整版本
+    for region in ['JP']:
         advanced_merge_kbitx_files(path_define.src_dir.joinpath(f'ZLabsRoundPix_16px_CN.kbitx'),
                                    path_define.src_dir.joinpath(f'ZLabsRoundPix_16px_{region}_diff.kbitx'),
                                    path_define.src_dir.joinpath(f'flags_{region}.txt'),
                                    path_define.data_dir.joinpath(f'ZLabsRoundPix_16px_{region}.kbitx'))
-        merge_kbitx_files(path_define.src_dir.joinpath(f'ZLabsRoundPix_16px_CN.kbitx'),
-                          path_define.src_dir.joinpath(f'ZLabsRoundPix_16px_{region}_diff.kbitx'),
-                          path_define.data_dir.joinpath(f'ZLabsRoundPix_16px_{region}_fallback.kbitx'))
-    '''
+        # merge_kbitx_files(path_define.src_dir.joinpath(f'ZLabsRoundPix_16px_CN.kbitx'),
+        #                   path_define.src_dir.joinpath(f'ZLabsRoundPix_16px_{region}_diff.kbitx'),
+        #                   path_define.data_dir.joinpath(f'ZLabsRoundPix_16px_{region}_fallback.kbitx'))
 
-    outlineStyles = ['Standard', 'Square Dot', 'Circle Dot']
 
+    # 生成字体
     for language_flavor in options.language_flavors:
         kbit_font = KbitFont.load_kbitx(path_define.data_dir.joinpath(f'ZLabsRoundPix_16px_{language_flavor}.kbitx'))
 
+        # 指定像素点样式，默认仅CN启用多样式
+        if language_flavor == 'CN':
+            outlineStyles = ['Standard', 'Square Dot', 'Circle Dot']
+        else:
+            outlineStyles = ['Standard']
+
+        # 遍历每一种像素点风格
         for style in outlineStyles:
+
+            # 根据像素点风格设置字体名称
             if style == 'Square Dot':
                 famliy_name = kbit_font.names.family.replace("M", "MS")
                 PSName = kbit_font.names.postscript.replace("M", "MS")
@@ -57,6 +73,7 @@ def main():
                 PSName = kbit_font.names.postscript
                 outputCode = "M"
 
+            # 设置相关属性
             builder = FontBuilder()
             builder.font_metric.font_size = kbit_font.props.em_height
             builder.font_metric.horizontal_layout.ascent = kbit_font.props.line_ascent
@@ -67,7 +84,7 @@ def main():
             builder.font_metric.x_height = kbit_font.props.x_height
             builder.font_metric.cap_height = kbit_font.props.cap_height
 
-            builder.meta_info.version = kbit_font.names.version
+            builder.meta_info.version = f"Build_{date_now_f}"
             builder.meta_info.weight_name = WeightName.REGULAR
             builder.meta_info.serif_style = SerifStyle.SERIF
             builder.meta_info.slant_style = SlantStyle.NORMAL
@@ -87,7 +104,8 @@ def main():
                 builder.meta_info.family_name = famliy_name + ' FB'
             else:
                 builder.meta_info.family_name = famliy_name
-
+            
+            # 设置像素点转换分辨率
             builder.opentype_config.px_to_units = 64
 
 
@@ -113,21 +131,23 @@ def main():
                     bitmap=[[0 if color <= 127 else 1 for color in bitmap_row] for bitmap_row in k_glyph.bitmap],
                 ))
             
-            match style:
-                case "Square Dot":
-                    builder.opentype_config.outlines_painter = (
-                        opentype.SquareDotOutlinesPainter()
-                    )
-                case "Circle Dot":
-                    builder.opentype_config.outlines_painter = (
-                        opentype.CircleDotOutlinesPainter()
-                    )
-                case _:
-                    pass
+            # 设置像素点风格
+            if True:
+                match style:
+                    case "Square Dot":
+                        builder.opentype_config.outlines_painter = (
+                            opentype.SquareDotOutlinesPainter()
+                        )
+                    case "Circle Dot":
+                        builder.opentype_config.outlines_painter = (
+                            opentype.CircleDotOutlinesPainter()
+                        )
+                    case _:
+                        pass
                 
 
 
-
+            # 导出字体
             ttf_font = builder.to_ttf_builder().font
             fix_mono_mode(ttf_font)
 

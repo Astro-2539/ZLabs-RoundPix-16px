@@ -48,17 +48,17 @@ This project is in the early development stage. Currently, it supports Level 1 C
 
 #### Mainland China Variant Glyphs (CN)
 
-&nbsp;&nbsp;&nbsp;&nbsp;🚧 GB/T 2312 (4096 / 6763)
+&nbsp;&nbsp;&nbsp;&nbsp;🚧 GB/T 2312 (4649 / 6763)
 
-&nbsp;&nbsp;&nbsp;&nbsp;🚧 "General Standard Chinese Characters Table"（通用规范汉字表） (4050 / 8105)
+&nbsp;&nbsp;&nbsp;&nbsp;🚧 "General Standard Chinese Characters Table"（通用规范汉字表） (4582 / 8105)
 
-&nbsp;&nbsp;&nbsp;&nbsp;🚧 Big5 Common Chinese Characters Table (2663 / 5401)
+&nbsp;&nbsp;&nbsp;&nbsp;🚧 Big5 Common Chinese Characters Table (2818 / 5401)
 
-&nbsp;&nbsp;&nbsp;&nbsp;🚧 "Common National Standard Font Table" (2600 / 4808)
+&nbsp;&nbsp;&nbsp;&nbsp;🚧 "Common National Standard Font Table" (2722 / 4808)
 
 &nbsp;&nbsp;&nbsp;&nbsp;🚧 GB/T 12345 (2938 / 6866)
 
-&nbsp;&nbsp;&nbsp;&nbsp;ℹ️ Total supported Chinese characters: 4195
+&nbsp;&nbsp;&nbsp;&nbsp;ℹ️ Total supported Chinese characters: 4790
 
 
 ## Building Fonts from Project Files
@@ -79,7 +79,7 @@ You can use this font for various purposes including commercial and embedded use
 
 When redistributing this font, you should indicate the original text or link of the OFL license agreement.
 
-According to the OFL agreement, if derivative fonts are made using this font, the derivative fonts must also comply with the OFL agreement. You must not sell this font separately.
+According to the OFL agreement, if derivative fonts are made using this font, the derivative fonts must also comply with the OFL agreement (or other agreements compatible with OFL). You must not sell this font separately.
 
 The author reserves the font name "Z 工坊 / Z Labs".
 
@@ -97,3 +97,7 @@ Licensed under the MIT license.
 ## Related Resources
 
 [Zitong Network](https://zi.tools/) - A website covering the origin, form, sound, meaning, and code of Chinese characters
+
+## Stargazers over time
+
+[![Stargazers over time](https://starchart.cc/Astro-2539/ZLabs-RoundPix-16px.svg?variant=adaptive)](https://starchart.cc/Astro-2539/ZLabs-RoundPix-16px)
