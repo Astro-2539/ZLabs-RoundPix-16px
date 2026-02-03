@@ -14,17 +14,21 @@
 
 **「Z Labs RoundPix 16px」（Z工坊像素圆体 16px）** 是一款规格为 16px 的中文像素字体（汉字实际占用大小为 15*15），采用圆体字形风格，西文字符按等宽规格绘制。
 
-本项目处于早期开发阶段，目前支持 GB/T 2312 一级汉字及少量二级汉字、常用西文及常用标点符号，可满足较为简单的简体中文汉字使用需求。
+本项目处于开发阶段，目前支持 GB/T 2312 一级汉字及部分二级汉字、常用西文及常用标点符号，可满足较为简单的简体中文汉字使用需求。
 
 > [!WARNING]
 > 
-> 此字体仍处于早期开发阶段，当前版本不代表正式版品质。
+> 此字体仍处于积极开发阶段，字形细节将不断调整及完善。
 > 
 > 如在使用过程中有任何问题，请及时在 Issues 中反馈。
 
 > [!IMPORTANT]
 > 
-> 这是一个开源项目，字体部分采用 [OFL-1.1](https://openfontlicense.org/open-font-license-official-text/) 许可证授权，构建程序部分采用 MIT 许可证授权。您可以免费商用此字体，详见「字体授权」部分。
+> 我们正在就像素字体的使用需求情况进行调查。
+>
+> 如果可以，请帮忙填写下方的问卷，非常感谢！
+>
+> https://docs.qq.com/form/page/DTEJRd1RadEtaUHNm
 > 
 
 ## 字体介绍
@@ -45,7 +49,7 @@
 
 *注：日本（JP）字形变体已经开始制作，仓库已更新相关文件。*
 
-*字形参考自「Zen Maru Gothic」，大致以JIS90为基准，而非采用较新的JIS2004标准。*
+*取形参考自「Zen Maru Gothic」，大致以JIS90为基准，而非采用较新的JIS2004标准。*
 
 *由于现阶段支持字符较少，未在Release中释出，如有需要可自行从源文件编译。*
 
@@ -55,17 +59,21 @@
 
 #### 中国大陆变体字形（CN）
 
-&nbsp;&nbsp;&nbsp;&nbsp;🚧 GB/T 2312 （4649 / 6763）
+&nbsp;&nbsp;&nbsp;&nbsp;🚧 GB/T 2312 （5996 / 6763）
 
-&nbsp;&nbsp;&nbsp;&nbsp;🚧 《通用规范汉字表》（4582 / 8105）
+&nbsp;&nbsp;&nbsp;&nbsp;🚧 《通用规范汉字表》（5900 / 8105）
 
-&nbsp;&nbsp;&nbsp;&nbsp;🚧 Big5 常用汉字表（2818 / 5401）
+&nbsp;&nbsp;&nbsp;&nbsp;🚧 Big5 常用汉字表（3233 / 5401）
 
-&nbsp;&nbsp;&nbsp;&nbsp;🚧《常用国字标准字体表》（2722 / 4808）
+&nbsp;&nbsp;&nbsp;&nbsp;🚧《常用国字标准字体表》（3018 / 4808）
 
-&nbsp;&nbsp;&nbsp;&nbsp;🚧 GB/T 12345（3351 / 6866）
+&nbsp;&nbsp;&nbsp;&nbsp;🚧 jf7000 当务字集基本包（3643 / 6373）
 
-&nbsp;&nbsp;&nbsp;&nbsp;ℹ️ 共计支持汉字：4790
+&nbsp;&nbsp;&nbsp;&nbsp;🚧 GB/T 12345（4255 / 6866）
+
+&nbsp;&nbsp;&nbsp;&nbsp;🚧 JIS X 0208（3234 / 6355）
+
+&nbsp;&nbsp;&nbsp;&nbsp;ℹ️ 共计支持汉字：6216
 
 
 

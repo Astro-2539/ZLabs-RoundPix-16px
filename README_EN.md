@@ -48,17 +48,19 @@ This project is in the early development stage. Currently, it supports Level 1 C
 
 #### Mainland China Variant Glyphs (CN)
 
-&nbsp;&nbsp;&nbsp;&nbsp;🚧 GB/T 2312 (4649 / 6763)
+&nbsp;&nbsp;&nbsp;&nbsp;🚧 GB/T 2312 (5996 / 6763)
 
-&nbsp;&nbsp;&nbsp;&nbsp;🚧 "General Standard Chinese Characters Table"（通用规范汉字表） (4582 / 8105)
+&nbsp;&nbsp;&nbsp;&nbsp;🚧 "General Standard Chinese Characters Table"（通用规范汉字表） (5900 / 8105)
 
-&nbsp;&nbsp;&nbsp;&nbsp;🚧 Big5 Common Chinese Characters Table (2818 / 5401)
+&nbsp;&nbsp;&nbsp;&nbsp;🚧 Big5 Common Chinese Characters Table (3233 / 5401)
 
-&nbsp;&nbsp;&nbsp;&nbsp;🚧 "Common National Standard Font Table" (2722 / 4808)
+&nbsp;&nbsp;&nbsp;&nbsp;🚧 "Common National Standard Font Table" (3643 / 4808)
 
-&nbsp;&nbsp;&nbsp;&nbsp;🚧 GB/T 12345 (2938 / 6866)
+&nbsp;&nbsp;&nbsp;&nbsp;🚧 GB/T 12345 (4255 / 6866)
 
-&nbsp;&nbsp;&nbsp;&nbsp;ℹ️ Total supported Chinese characters: 4790
+&nbsp;&nbsp;&nbsp;&nbsp;🚧 JIS X 0208（3234 / 6355）
+
+&nbsp;&nbsp;&nbsp;&nbsp;ℹ️ Total supported Chinese characters: 6216
 
 
 ## Building Fonts from Project Files
