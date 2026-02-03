@@ -28,7 +28,7 @@
 >
 > 如果可以，请帮忙填写下方的问卷，非常感谢！
 >
-> https://docs.qq.com/form/page/DTEJRd1RadEtaUHNm
+> https://f.kdocs.cn/g/EwkAraFp/
 > 
 
 ## 字体介绍
