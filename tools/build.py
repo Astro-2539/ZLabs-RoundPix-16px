@@ -2,8 +2,9 @@ import math
 import shutil
 import zipfile
 from datetime import date
-
+from fontTools.ttLib.tables._n_a_m_e import NameRecord
 from fontTools.ttLib import TTFont
+
 from kbitfont import KbitFont
 from pixel_font_builder import FontBuilder, WeightName, SerifStyle, SlantStyle, WidthStyle, Glyph, opentype
 
@@ -19,6 +20,64 @@ def fix_mono_mode(font: TTFont):
     font['OS/2'].achVendID = "ZLAB"
     font['OS/2'].ulCodePageRange1 = 0b1100000000101100000000000001101
     font['OS/2'].ulCodePageRange2 = 0b10000110101010000000000000000    # 为字体添加微软编码页属性，防止某些程序不识别
+
+def font_name_table_set(font: TTFont, region: str, style: str):
+    info_CHS = {
+        0: '© 2025-2026 Astro_2539. 保留字体名称「Z工坊/Z Labs」。',
+        1: 'Z工坊像素圆体 16px',
+        2: 'Regular',
+        8: 'Z Labs Design',
+        13: '本字体软件采用OFL-1.1开源字体许可证授权。欲知详情，请访问：https://openfontlicense.org/。\n本字体所有副本均免费分发，若您通过付费途径获取本字体软件，请立即举报并差评！',
+        19: '像素之光点亮文字之美 The luster of pixels lights up the beauty of words.'
+    }
+    info_CHT = {
+        0: '© 2025-2026 Astro_2539. 保留字體名稱「Z工坊/Z Labs」。',
+        1: 'Z工坊像素圓體 16px',
+        2: 'Regular',
+        8: 'Z Labs Design',
+        13: '本字型檔採用OFL-1.1開源字型許可證授權。欲知詳情，請訪問：https://openfontlicense.org/。\n本字型檔所有副本均免費分發，若您通過付費途徑獲取本字體軟體，請立即舉報並差評！',
+        19: '像素之光點亮文字之美 The luster of pixels lights up the beauty of words.'
+    }
+    match style:
+        case 'Standard':
+            info_CHS[1] += ' M '
+            info_CHT[1] += ' M '
+        case 'Circle Dot':
+            info_CHS[1] += ' MD '
+            info_CHT[1] += ' MD '
+        case 'Square Dot':
+            info_CHS[1] += ' MS '
+            info_CHT[1] += ' MS '
+        case _:
+            pass
+    if '_fallback' in region:
+        region.replace('_fallback', ' FB')
+    info_CHS[1] += region
+    info_CHT[1] += region
+    info_CHS[4] = info_CHS[1] + ' Regular'
+    info_CHT[4] = info_CHT[1] + ' Regular'
+
+    name_table = font['name']
+
+    for name_id, new_content in info_CHS.items():
+        new_record = NameRecord()
+        new_record.nameID = name_id
+        new_record.platformID = 3
+        new_record.platEncID = 1
+        new_record.langID = 0x804
+        new_record.string = new_content.encode('utf-16-be')
+        name_table.names.append(new_record)
+
+    for name_id, new_content in info_CHT.items():
+        new_record = NameRecord()
+        new_record.nameID = name_id
+        new_record.platformID = 3
+        new_record.platEncID = 1
+        new_record.langID = 0x404
+        new_record.string = new_content.encode('utf-16-be')
+        name_table.names.append(new_record)
+
+
 
 
 def main():
@@ -89,7 +148,7 @@ def main():
             builder.meta_info.serif_style = SerifStyle.SERIF
             builder.meta_info.slant_style = SlantStyle.NORMAL
             builder.meta_info.width_style = WidthStyle.MONOSPACED
-            builder.meta_info.manufacturer = kbit_font.names.manufacturer
+            builder.meta_info.manufacturer = 'Z Labs Design'
             builder.meta_info.designer = kbit_font.names.designer
             builder.meta_info.description = kbit_font.names.description
             builder.meta_info.copyright_info = kbit_font.names.copyright
@@ -150,6 +209,7 @@ def main():
             # 导出字体
             ttf_font = builder.to_ttf_builder().font
             fix_mono_mode(ttf_font)
+            font_name_table_set(ttf_font, language_flavor, style)
 
             print(f'Creating ZLabsRoundPix_16px_{outputCode}_{language_flavor.upper()}.ttf, please wait…')
             ttf_font.save(path_define.outputs_dir.joinpath(f'ZLabsRoundPix_16px_{outputCode}_{language_flavor.upper()}.ttf'))

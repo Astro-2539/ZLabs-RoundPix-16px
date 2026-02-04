@@ -9,6 +9,10 @@
 
 ![Title](/img/EN/幻灯片1.PNG "Title")
 
+> [!CAUTION]
+>
+> Recently, it has been discovered that numerous open-source fonts, including this one, as well as free commercial fonts, are being resold by certain merchants on e-commerce platforms such as Taobao and Xiaohongshu. This behavior seriously violates the restrictions on font sales outlined in OFL-1.1. If you encounter such a store selling this font, **please refrain from purchasing it!** Otherwise, the money you pay **will not** go to the font author, and you **will not** receive version updates or other support for this font.
+
 > [!WARNING]
 > 
 > The English name of this font family has been changed from **"Z Labs Round Bitmap 16px"** to **"Z Labs RoundPix 16px"** (see [Issues #1](https://github.com/Astro-2539/ZLabs-Round-Bitmap-16px/issues/1) for details), while the Chinese name remains unchanged.
