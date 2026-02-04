@@ -4,6 +4,10 @@
 
 ![Title](/img/幻灯片1.PNG "Title")
 
+> [!CAUTION]
+>
+> 近来发现，包括本字体在内的众多开源字体、免费商用字体被淘宝、小红书等电商平台的某些商家倒卖，这种行为严重违反了 OFL 1.1 中对字体售卖行为的限制条款。如您遇到此类店铺贩售本字体，**请不要购买！** 否则，您所支付的钱财将**不会**流入字体作者手中，您也**不会**获得本字体的版本更新或其他支持。
+
 > [!WARNING]
 > 
 > 本字体家族的英文名称已由"Z Labs Round Bitmap 16px"变更为"Z Labs RoundPix 16px"（详见[Issues #1](https://github.com/Astro-2539/ZLabs-Round-Bitmap-16px/issues/1)），中文名称不变。
