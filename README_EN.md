@@ -34,6 +34,10 @@ This project is in the early development stage. Currently, it supports all Chine
 
 [Click to view the font story (Chinese)](/docs/FontStory_1.md)
 
+> [!TIP]
+>
+> Also try [**Z Labs RoundPix 12px**](https://github.com/Astro-2539/ZLabs-RoundPix-12px) or [**x12y16pxMyMaruMonica** (by 綿雲飴里)](https://fonts.zeoseven.com/items/636/) to find a suitable font for your project!
+
 ## Font Coverage
 
 ### Chinese Characters

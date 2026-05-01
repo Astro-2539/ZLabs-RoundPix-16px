@@ -39,6 +39,11 @@
 
 [点击查看字体故事](/docs/FontStory_1.md)
 
+> [!TIP]
+> 
+> 您也可以尝试其他圆体像素字体： [**Z工坊像素圆体 12px**](https://github.com/Astro-2539/ZLabs-RoundPix-12px) 或 [**12×16莫妮卡圆像素**（by 綿雲飴里）](https://fonts.zeoseven.com/items/636/) 
+> 
+
 ## 字形变体
 
 目前仅支持中国大陆（CN）字形变体。
