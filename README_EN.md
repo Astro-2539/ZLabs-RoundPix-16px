@@ -36,7 +36,7 @@ This project is in the early development stage. Currently, it supports all Chine
 
 > [!TIP]
 >
-> Also try [**Z Labs RoundPix 12px**](https://github.com/Astro-2539/ZLabs-RoundPix-12px) or [**x12y16pxMyMaruMonica** (by 綿雲飴里)](https://fonts.zeoseven.com/items/636/) to find a suitable font for your project!
+> Also try [**Z Labs RoundPix 12px**](https://github.com/Astro-2539/ZLabs-RoundPix-12px) or [**x12y16pxMyMaruMonica** (by 綿雲飴里)](https://www.maoken.com/freefonts/25830.html) to find a suitable font for your project!
 
 ## Font Coverage
 

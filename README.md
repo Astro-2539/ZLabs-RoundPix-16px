@@ -41,7 +41,7 @@
 
 > [!TIP]
 > 
-> 您也可以尝试其他圆体像素字体： [**Z工坊像素圆体 12px**](https://github.com/Astro-2539/ZLabs-RoundPix-12px) 或 [**12×16莫妮卡圆像素**（by 綿雲飴里）](https://fonts.zeoseven.com/items/636/) 
+> 您也可以尝试其他圆体像素字体： [**Z工坊像素圆体 12px**](https://github.com/Astro-2539/ZLabs-RoundPix-12px) 或 [**12×16莫妮卡圆像素**（by 綿雲飴里）](https://www.maoken.com/freefonts/25830.html) 
 > 
 
 ## 字形变体
