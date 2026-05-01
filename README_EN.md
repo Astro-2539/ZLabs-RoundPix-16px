@@ -13,34 +13,22 @@
 >
 > Recently, it has been discovered that numerous open-source fonts, including this one, as well as free commercial fonts, are being resold by certain merchants on e-commerce platforms such as Taobao and Xiaohongshu. This behavior seriously violates the restrictions on font sales outlined in OFL-1.1. If you encounter such a store selling this font, **please refrain from purchasing it!** Otherwise, the money you pay **will not** go to the font author, and you **will not** receive version updates or other support for this font.
 
-> [!WARNING]
-> 
-> The English name of this font family has been changed from **"Z Labs Round Bitmap 16px"** to **"Z Labs RoundPix 16px"** (see [Issues #1](https://github.com/Astro-2539/ZLabs-Round-Bitmap-16px/issues/1) for details), while the Chinese name remains unchanged.
-> 
-> Meanwhile, the font names in the font files have also been synchronously changed. Due to the different names, the old and new versions of the fonts can coexist. **You need to manually switch to the renamed new version of the font in your project.**
-> 
-> If you have any questions or suggestions, please reply in Issue #1.
-
 **Z Labs RoundPix 16px** is a 16px Chinese pixel font (with actual Chinese character size being 15*15), adopting a round-shaped style, with Western characters drawn in a monospaced proportion.
 
-This project is in the early development stage. Currently, it supports Level 1 Chinese characters of GB/T 2312, common Western characters, and common punctuation marks, which can meet relatively simple Simplified Chinese character usage needs.
+This project is in the early development stage. Currently, it supports all Chinese characters of GB/T 2312, common Western characters, and common punctuation marks, which can meet most Simplified Chinese character usage needs.
 
 > [!WARNING]
 > 
-> This font is still in the early development stage, and the current version does not represent the quality of the final version.
+> This font is still in the development and adjustment stage, and currently has issues such as uneven central strokes and inconsistent character components. We kindly ask for your understanding.
 > 
 > If you encounter any problems during use, please feedback in Issues in a timely manner.
 
-> [!IMPORTANT]
-> 
-> This is an open-source project. The font part is licensed under the [OFL-1.1](https://openfontlicense.org/open-font-license-official-text/) license, and the build program part is licensed under the MIT license. You can use this font for commercial purposes for free. For details, please refer to the "Font License" section.
-> 
 
 ## Font Introduction
 
 ![Introduction Page](/img/EN/幻灯片2.PNG "Introduction Page")
 
-![Example Page](/img/EN/幻灯片3.PNG "Example Page")
+![Example Page](/img/3.png "Example Page")
 
 ![License Page](/img/EN/幻灯片4.PNG "License Page")
 
@@ -52,19 +40,19 @@ This project is in the early development stage. Currently, it supports Level 1 C
 
 #### Mainland China Variant Glyphs (CN)
 
-&nbsp;&nbsp;&nbsp;&nbsp;🚧 GB/T 2312 (5996 / 6763)
+&nbsp;&nbsp;&nbsp;&nbsp;✅ GB/T 2312 (6763 / 6763)
 
-&nbsp;&nbsp;&nbsp;&nbsp;🚧 "General Standard Chinese Characters Table"（通用规范汉字表） (5900 / 8105)
+&nbsp;&nbsp;&nbsp;&nbsp;🚧 "General Standard Chinese Characters Table"（通用规范汉字表） (6654 / 8105)
 
-&nbsp;&nbsp;&nbsp;&nbsp;🚧 Big5 Common Chinese Characters Table (3233 / 5401)
+&nbsp;&nbsp;&nbsp;&nbsp;🚧 Big5 Common Chinese Characters Table (3472 / 5401)
 
-&nbsp;&nbsp;&nbsp;&nbsp;🚧 "Common National Standard Font Table" (3643 / 4808)
+&nbsp;&nbsp;&nbsp;&nbsp;🚧 "Common National Standard Font Table" (3197 / 4808)
 
-&nbsp;&nbsp;&nbsp;&nbsp;🚧 GB/T 12345 (4255 / 6866)
+&nbsp;&nbsp;&nbsp;&nbsp;🚧 GB/T 12345 (4822 / 6866)
 
-&nbsp;&nbsp;&nbsp;&nbsp;🚧 JIS X 0208（3234 / 6355）
+&nbsp;&nbsp;&nbsp;&nbsp;🚧 JIS X 0208（3541 / 6355）
 
-&nbsp;&nbsp;&nbsp;&nbsp;ℹ️ Total supported Chinese characters: 6216
+&nbsp;&nbsp;&nbsp;&nbsp;ℹ️ Total supported Chinese characters: 7042
 
 
 ## Building Fonts from Project Files
@@ -81,13 +69,25 @@ The licensing of this project is divided into two parts: "Font" and "Build Code"
 
 Licensed under the [SIL Open Font License 1.1](https://openfontlicense.org/open-font-license-official-text/).
 
-You can use this font for various purposes including commercial and embedded use without obtaining additional authorization from the font author.
+According to this license, you are entitled to:
 
-When redistributing this font, you should indicate the original text or link of the OFL license agreement.
+- **Free use** of the font software in various projects (including commercial use);
 
-According to the OFL agreement, if derivative fonts are made using this font, the derivative fonts must also comply with the OFL agreement (or other agreements compatible with OFL). You must not sell this font separately.
+- **Distribute** the font software freely;
 
-The author reserves the font name "Z 工坊 / Z Labs".
+- **Embed** the font software in the software/device;
+
+- **Modify** and create derivative fonts on your own.
+
+However, you need to comply with the following conditions:
+
+- **It is prohibited to sell this font software separately for profit**;
+
+- The copyright and licensing information of the font must be retained during distribution;
+
+- Derivative fonts created must not use the reserved name of the original font "Z工坊" and "Z Labs", and must also be released under the OFL-1.1 license;
+
+- The font software shall not be used for illegal purposes.
 
 ### Build Code
 

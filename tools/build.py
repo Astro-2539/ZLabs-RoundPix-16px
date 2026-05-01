@@ -1,6 +1,6 @@
 import math
 import shutil
-import zipfile
+import argparse
 from datetime import date
 from fontTools.ttLib.tables._n_a_m_e import NameRecord
 from fontTools.ttLib import TTFont
@@ -23,7 +23,7 @@ def fix_mono_mode(font: TTFont):
 
 def font_name_table_set(font: TTFont, region: str, style: str):
     info_CHS = {
-        0: '© 2025-2026 Astro_2539. 保留字体名称「Z工坊/Z Labs」。',
+        0: '© 2025-2026 Astro_2539. 保留字体名称「Z工坊」「Z Labs」。',
         1: 'Z工坊像素圆体 16px',
         2: 'Regular',
         8: 'Z Labs Design',
@@ -31,11 +31,11 @@ def font_name_table_set(font: TTFont, region: str, style: str):
         19: '像素之光点亮文字之美 The luster of pixels lights up the beauty of words.'
     }
     info_CHT = {
-        0: '© 2025-2026 Astro_2539. 保留字體名稱「Z工坊/Z Labs」。',
+        0: '© 2025-2026 Astro_2539. 保留字體名稱「Z工坊」「Z Labs」。',
         1: 'Z工坊像素圓體 16px',
         2: 'Regular',
         8: 'Z Labs Design',
-        13: '本字型檔採用OFL-1.1開源字型許可證授權。欲知詳情，請訪問：https://openfontlicense.org/。\n本字型檔所有副本均免費分發，若您通過付費途徑獲取本字體軟體，請立即舉報並差評！',
+        13: '本字型檔採用OFL-1.1開源字型許可證授權。欲知詳情，請訪問：https://openfontlicense.org/。\n本字型檔所有副本均免費分發，若您通過付費途徑獲取本字型檔，請立即舉報並差評！',
         19: '像素之光點亮文字之美 The luster of pixels lights up the beauty of words.'
     }
     match style:
@@ -81,6 +81,11 @@ def font_name_table_set(font: TTFont, region: str, style: str):
 
 
 def main():
+    # 设置脚本的可选运行参数
+    parser = argparse.ArgumentParser()
+    parser.add_argument('-ds', '--DisableStyles', type=bool, default=False, help='当此项为 True 时，将禁用圆点、方点样式的生成。默认为 False。')
+    args = parser.parse_args()
+
     # 获取当前日期
     date_now = date.today()
     date_now_f = date_now.strftime("%Y%m%d")
@@ -110,7 +115,7 @@ def main():
         kbit_font = KbitFont.load_kbitx(path_define.data_dir.joinpath(f'ZLabsRoundPix_16px_{language_flavor}.kbitx'))
 
         # 指定像素点样式，默认仅CN启用多样式
-        if language_flavor == 'CN':
+        if language_flavor == 'CN' and args.DisableStyles == False:
             outlineStyles = ['Standard', 'Square Dot', 'Circle Dot']
         else:
             outlineStyles = ['Standard']
